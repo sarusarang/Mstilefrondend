@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { Check, Truck, Leaf, Star } from "lucide-react";
 import CountUp from "../CountUp";
+import type { JSX } from "react";
 
 
 
-const stats = [
+const stats : { value: number; symbol: string; label: string }[] = [
     { value: 2800, symbol: "+", label: "Recommended Engineers" },
     { value: 10, symbol: "K+", label: "Completed Projects" },
     { value: 10, symbol: "+", label: "Showroom Locations" },
@@ -13,7 +14,7 @@ const stats = [
 
 
 
-const features = [
+const features : { icon: JSX.Element; title: string }[] = [
     {
         icon: <Check size={18} strokeWidth={2} />,
         title: "Custom-made options tailored to your space",
@@ -70,7 +71,7 @@ export default function Us() {
                                 />
                                 {s.symbol}
                             </div>
-                            <div className="text-sm md:text-base text-white/80 mt-1">
+                            <div className="text-sm md:text-base text-white/80 mt-1 font-serif">
                                 {s.label}
                             </div>
                         </div>
@@ -109,11 +110,11 @@ export default function Us() {
                 {/* Right content */}
                 <motion.div className="w-full">
 
-                    <h3 className="text-3xl md:text-4xl font-bold text-[#0f2b25] leading-tight">
+                    <h3 className="text-3xl md:text-4xl font-bold text-[#0f2b25] leading-tight font-serif">
                         Why our furniture stands out
                     </h3>
 
-                    <p className="text-sm md:text-base text-[#55615a] mt-4 max-w-xl">
+                    <p className="text-sm md:text-base text-[#55615a] mt-4 max-w-xl font-serif">
                         We believe great furniture should be both beautiful and functional.
                         Here's why customers love us:
                     </p>
@@ -132,7 +133,7 @@ export default function Us() {
                                 >
                                     <div className="text-[#0f2b25]">{f.icon}</div>
                                 </div>
-                                <div className="text-sm md:text-base text-[#254136]">
+                                <div className="text-sm md:text-base text-[#254136] font-serif">
                                     {f.title}
                                 </div>
                             </motion.div>
@@ -146,7 +147,7 @@ export default function Us() {
                     >
                         <a
                             href="#contact"
-                            className="inline-block rounded-full px-6 py-3 text-sm md:text-base font-medium shadow-md"
+                            className="inline-block rounded-full px-6 py-3 text-sm md:text-base font-medium shadow-md font-serif"
                             style={{
                                 backgroundColor: "#3EE5B1",
                                 color: "#062b22",

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -7,6 +8,7 @@ export default function SellingProducts() {
 
 
 
+    // Sample images for the cards
     const images = [
         "https://image.made-in-china.com/2f0j00RgleBnsqMicy/Import-60X60-Non-Slip-Tiles-Price-in-Philippines-From-China.webp",
         "https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/amj-2025-1744185110-pMHWe/dining-room-1744827105-ZkIP5/new-project-16-1746176324-b8JKP.jpg",
@@ -72,21 +74,56 @@ export default function SellingProducts() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="mt-10 sm:mt-16 bg-white w-full py-8 sm:py-16 text-center rounded-t-4xl sm:rounded-t-[100px] shadow-[0_-20px_50px_rgba(0,0,0,0.1)]"
+                className="mt-10 sm:mt-16 bg-white w-full py-10 sm:py-16 text-center 
+               rounded-t-4xl sm:rounded-t-[100px] shadow-[0_-20px_50px_rgba(0,0,0,0.1)]"
             >
                 <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-serif">
                     Find Our Most Selling Products
                 </h3>
 
                 <p className="text-gray-600 max-w-xl mx-auto font-serif">
-                    Discover Our Most Popular Walling Solutions, Including The Thermal-Efficient Porotherm Briks, Which Stand For Enhancing Construction Speed, Water Conservation, &  Zero Waste Of Valuable Materials And Goods
+                    Discover Our Most Popular Walling Solutions, Including The Thermal-Efficient Porotherm Briks,
+                    Which Stand For Enhancing Construction Speed, Water Conservation, & Zero Waste Of Valuable Materials
+                    And Goods.
                 </p>
 
-                <button className="mt-6 font-serif px-8 py-3 border border-black rounded-full text-sm font-medium hover:bg-black hover:text-white transition hover:scale-105 hover:cursor-pointer">
-                    More Details →
-                </button>
+                {/* 3-IMAGE GRID */}
+                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-2 sm:px-12 lg:px-20">
 
+                    {/* Image Card */}
+                    {[
+                        "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+                        "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg",
+                        "https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg"
+                    ].map((img, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 5, rotate: 0 }}
+                            whileInView={{ opacity: 1, y: 0}}
+                            transition={{ duration: 0.8, delay: index * 0.4 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            className="rounded-xl overflow-hidden shadow-md group"
+                        >
+                            <img
+                                src={img}
+                                alt="Product"
+                                className="w-full h-48 sm:h-56 md:h-64 object-cover 
+                               transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </motion.div>
+                    ))}
+
+                </div>
+
+                <Link to="/products" className="hover:cursor-pointer">
+                    <button className="mt-8 font-serif px-8 py-3 border border-black rounded-full 
+                           text-sm font-medium hover:bg-black hover:text-white transition 
+                           hover:scale-105 hover:cursor-pointer">
+                        More Details →
+                    </button>
+                </Link>
             </motion.div>
+
 
         </section>
 

@@ -32,13 +32,14 @@ const Navbar = () => {
             }
         };
 
-        if (location.pathname === "/" || location.pathname === "/projects" || location.pathname === "/contact" || location.pathname === "/about" || location.pathname === "/service" || location.pathname === "/products") {
+        if (location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/contact" || location.pathname === "/products" || location.pathname === "/locator") {
             window.addEventListener("scroll", handleScroll);
         }
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
+
     }, [location.pathname]);
 
 
@@ -46,7 +47,7 @@ const Navbar = () => {
     // Navigation items
     const navItems = [
         { name: "Home", href: "/" },
-        { name: "About", href: "/about" },
+        { name: "About", href: "/about-us" },
         { name: "Locator", href: "/locator" },
         { name: "Products", href: "/products" },
     ];
@@ -74,16 +75,17 @@ const Navbar = () => {
 
 
     // Navbar style logic
-    const isHome = location.pathname === "/" || location.pathname === "/projects" || location.pathname === "/contact" || location.pathname === "/about" || location.pathname === "/service" || location.pathname === "/products";
+    const isHome = location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/contact" || location.pathname === "/products" || location.pathname === "/locator";
     const isTransparent = isHome && !scrolled;
 
 
+    
     return (
 
 
         <nav
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+                "fixed top-0 left-0 right-0 z-50 transition-all duration-500 font-serif",
                 isTransparent
                     ? "bg-transparent text-white"
                     : "bg-white text-black"
@@ -91,7 +93,7 @@ const Navbar = () => {
         >
 
 
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-14">
+            <div className="w-full mx-auto px-4 sm:px-6 lg:px-16">
 
 
                 <div className="flex items-center justify-between h-16">
@@ -102,11 +104,11 @@ const Navbar = () => {
 
                         {isTransparent ? (
 
-                            <img src="https://www.pngkey.com/png/full/529-5291672_sample-logo-png-transparent-background.png" loading="lazy" className="object-contain h-16 w-40" alt="nav-logo" />
+                            <img src="/Nav-dark.png" loading="lazy" className="object-contain h-80 w-44" alt="nav-logo" />
 
                         ) : (
 
-                            <img src="https://www.pngkey.com/png/full/529-5291672_sample-logo-png-transparent-background.png" loading="lazy" className="object-contain h-16 w-40" alt="nav-logo" />
+                            <img src="/Nav-dark.png" loading="lazy" className="object-contain h-80 w-44" alt="nav-logo" />
 
                         )}
 

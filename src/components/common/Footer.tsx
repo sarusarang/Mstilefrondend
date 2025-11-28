@@ -14,7 +14,7 @@ export default function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="bg-black text-white rounded-t-3xl px-6 sm:px-12 lg:px-20 pt-16 pb-5"
+      className="bg-black text-white rounded-t-3xl px-6 sm:px-12 lg:px-20 pt-16 pb-5 font-serif"
     >
 
 
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="space-y-6">
 
           <div className="flex items-center gap-2">
-            <img src="/FRK-logo-white.png" className="w-48 h-16 object-contain" alt="foot-logo" />
+            <img src="/Nav-dark.png" className="w-48 h-16 object-contain" alt="foot-logo" />
           </div>
 
 
@@ -89,12 +89,6 @@ export default function Footer() {
 
           </div>
 
-
-          <div className="flex gap-5 text-sm text-gray-400">
-            <a className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</a>
-            <a className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</a>
-          </div>
-
         </div>
 
 
@@ -109,10 +103,10 @@ export default function Footer() {
               <h5 className="font-medium mb-3">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
                 <li className="hover:text-gray-200"><Link to={'/'}>Home</Link></li>
-                <li className="hover:text-gray-200"><Link to={'/about'}>About Us</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/about-us'}>About Us</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/locator'}>Locator</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/products'}>Products</Link></li>
-                <li className="hover:text-gray-200"><Link to={'/projects'}>Contact</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/contact'}>Contact</Link></li>
               </ul>
             </div>
 
@@ -162,9 +156,17 @@ export default function Footer() {
       </div>
 
 
-      <div className="flex flex-col text-gray-400 items-center justify-center mt-5 sm:mt-0">
-        <a href="#" className="hover-cursor-pointer text-xs mb-1">©{new Date().getFullYear()} MSTILES All rights reserved</a>
-        <a href="https://extechnology.in" target="_blank" className="hover-cursor-pointer text-xs">Developed by <span className="text-white">ex-technology</span></a>
+      <div className="flex text-gray-400 items-center justify-between mt-5 sm:mt-10 border-t border-gray-600 pt-4 flex-col sm:flex-row gap-3">
+
+        <div className="flex gap-5 text-sm text-gray-400">
+          <Link to={'/terms-and-conditions'} className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</Link>
+          <Link to={'/privacy-policy'} className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</Link>
+        </div>
+
+        <a href="#" className="hover-cursor-pointer text-xs">©{new Date().getFullYear()} MS Tiles Agencies All rights reserved</a>
+
+        <a href="https://extechnology.in" target="_blank" className="hover-cursor-pointer text-sm">Developed by <span className="text-white">ex-technology</span></a>
+
       </div>
 
     </motion.footer>

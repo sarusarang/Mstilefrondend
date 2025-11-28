@@ -1,11 +1,16 @@
 import { Suspense, lazy } from "react"
 import { Route, Routes } from "react-router-dom"
-
-
+import ScrollToTop from "./components/common/ScrollToTop"
+import SuspenseLoader from "./components/loader/SuspenseLoader"
 
 
 // Lazy load pages
 const Index = lazy(() => import("./pages/Index"))
+const AboutUs = lazy(() => import("./pages/AboutUs"))
+const Products = lazy(() => import("./pages/Product"))
+const Contact = lazy(() => import("./pages/Contact"))
+const Terms = lazy(() => import("./pages/Terms"))
+const Privacy = lazy(() => import("./pages/Privacy"))
 const NotFound = lazy(() => import("./components/common/NotFound"))
 
 
@@ -24,7 +29,9 @@ function App() {
   return (
 
 
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<SuspenseLoader />} >
+
+      <ScrollToTop />
 
       <Routes>
 
@@ -33,6 +40,16 @@ function App() {
         <Route element={<MainLayout />} >
 
           <Route index element={<Index />} />
+
+          <Route path="about-us" element={<AboutUs />} />
+
+          <Route path="products" element={<Products />} />
+
+          <Route path="contact" element={<Contact />} />
+
+          <Route path="terms-and-conditions" element={<Terms />} />
+
+          <Route path="privacy-policy" element={<Privacy />} />
 
         </Route>
 

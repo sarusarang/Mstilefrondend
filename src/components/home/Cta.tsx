@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -45,7 +46,7 @@ const CTASection = () => {
                         viewport={{ once: true, amount: 0.2 }}
                         className="mb-4"
                     >
-                        <span className="px-4 py-1 text-sm font-medium rounded-full bg-white shadow-md">
+                        <span className="px-4 py-1 text-sm font-medium rounded-full bg-white shadow-md font-serif">
                             Get Started Today
                         </span>
                     </motion.div>
@@ -57,7 +58,7 @@ const CTASection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.7 }}
                         viewport={{ once: true, amount: 0.2 }}
-                        className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
+                        className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight font-serif"
                     >
                         It All Starts With a <br className="hidden sm:block" /> Simple Call
                     </motion.h2>
@@ -69,7 +70,7 @@ const CTASection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.6 }}
                         viewport={{ once: true, amount: 0.2 }}
-                        className="text-white/90 text-sm sm:text-base mt-4 max-w-2xl"
+                        className="text-white/90 text-sm sm:text-base mt-4 max-w-2xl font-serif"
                     >
                         Speak to our furniture experts and find the perfect pieces for your home.
                         We're here to help!
@@ -84,12 +85,14 @@ const CTASection = () => {
                         viewport={{ once: true, amount: 0.2 }}
                         className="mt-6"
                     >
-                        <button
-                            className="px-6 py-3 text-sm md:text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
-                            style={{ backgroundColor: "#3EE5B1", color: "#062B22" }}
-                        >
-                            Talk to Our Experts
-                        </button>
+                        <Link to="/contact" className="hover:cursor-pointer">
+                            <button
+                                className="px-6 py-3 font-serif text-sm md:text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
+                                style={{ backgroundColor: "#3EE5B1", color: "#062B22" }}
+                            >
+                                Talk to Our Experts
+                            </button>
+                        </Link>
                     </motion.div>
 
                 </div>

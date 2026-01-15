@@ -24,7 +24,7 @@ const CTASection = () => {
 
                 {/* Background Image */}
                 <img
-                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
+                    src="/hero-cta.webp"
                     alt="Living room CTA background"
                     loading="lazy"
                     className="w-full h-[350px] sm:h-[420px] md:h-[480px] object-cover"

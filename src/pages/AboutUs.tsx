@@ -13,8 +13,6 @@ const fadeUp = {
 
 
 
-
-
 export default function About() {
 
 
@@ -29,7 +27,7 @@ export default function About() {
             <HeroBanner
                 title="About Us"
                 desc="Kerala's trusted distributor of Porotherm Smart Bricks — Building greener, stronger, and smarter future-ready walls."
-                image="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
+                image="/About Us-banner.webp"
             />
 
 
@@ -67,7 +65,7 @@ export default function About() {
                             className="relative"
                         >
                             <img
-                                src="https://media.istockphoto.com/id/629163938/photo/successful-senior-businessman-standing-in-office.jpg?s=612x612&w=0&k=20&c=Xyxtfzb-z4-6AF93f24LtnN6xQ2uyj4oSYg3B2AsZ9I="
+                                src="/Stand-with-Experience-Vision.webp"
                                 alt="Founder Muhammed Bappu"
                                 loading="lazy"
                                 className="rounded-2xl sm:shadow-2xl w-full object-cover"
@@ -96,7 +94,7 @@ export default function About() {
                     <div className="grid md:grid-cols-2 gap-5 sm:gap-12 items-center">
 
                         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                            <h3 className="text-3xl md:text-4xl font-bold mb-2 font-serif">Md. Mujeeb Reham</h3>
+                            <h3 className="text-3xl md:text-4xl font-bold mb-2 font-serif">Md. Mujeeb Rahman</h3>
                             <p className="text-md font-semibold text-red-600 mb-4 font-serif">
                                 Chairman & Managing Director
                             </p>
@@ -116,7 +114,7 @@ export default function About() {
                             className="relative"
                         >
                             <img
-                                src="https://media.istockphoto.com/id/629163938/photo/successful-senior-businessman-standing-in-office.jpg?s=612x612&w=0&k=20&c=Xyxtfzb-z4-6AF93f24LtnN6xQ2uyj4oSYg3B2AsZ9I="
+                                src="/Mujeeb-Reham.webp"
                                 alt="Chairman Mujeeb Reham"
                                 loading="lazy"
                                 className="rounded-2xl shadow-2xl w-full object-cover"
@@ -126,6 +124,47 @@ export default function About() {
 
                     </div>
                 </section>
+
+
+                {/* ---------------- Director ---------------- */}
+                <section className="py-5 sm:py-14 border-t-2 border-dashed border-gray-300">
+
+                    <div className="grid md:grid-cols-2 gap-5 sm:gap-12 items-center">
+
+                        <motion.div
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="relative"
+                        >
+                            <img
+                                src="/Director-image.webp"
+                                alt="Chairman Mujeeb Reham"
+                                loading="lazy"
+                                className="rounded-2xl shadow-2xl w-full object-cover"
+                            />
+                            <div className="absolute -bottom-5 -right-5 w-32 h-32 bg-blue-300 blur-3xl opacity-40"></div>
+                        </motion.div>
+
+                        <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                            <h3 className="text-3xl md:text-4xl font-bold mb-2 font-serif">Md. Sahji</h3>
+                            <p className="text-md font-semibold text-red-600 mb-4 font-serif">
+                                Director
+                            </p>
+                            <p className="text-gray-700 mb-4 leading-relaxed text-justify font-serif">
+                                It is a privilege to lead MS Tiles Agencies as we continue a legacy that began over five decades ago under the visionary guidance of our founder, Muhammed Bappu. His commitment to quality and integrity remains the cornerstone of everything we do today.
+                                As the authorized distributor of Wienerberger Porotherm Smart Bricks, we proudly introduce world-class construction solutions to Kerala. Our focus goes beyond supplying materials—we enable smarter construction through enhanced thermal performance, faster execution, and sustainable building practices.
+                            </p>
+                            <p className="text-gray-700 leading-relaxed text-justify font-serif">
+                                At MS Tiles, our mission is to support builders and homeowners in creating durable, eco-friendly structures that stand the test of time. We sincerely thank our partners and customers for their continued trust as we build the future of construction together.
+                            </p>
+                        </motion.div>
+
+                    </div>
+
+                </section>
+
 
 
                 {/* ---------------- MARKETING TEAM ---------------- */}
@@ -140,7 +179,7 @@ export default function About() {
                             className="relative"
                         >
                             <img
-                                src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+                                src="/Our-Marketing-Team-Driving-Innovation-Forward.webp"
                                 alt="Marketing Team"
                                 loading="lazy"
                                 className="rounded-2xl w-full object-cover shadow-xl"
@@ -184,7 +223,7 @@ export default function About() {
                             className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-xl p-3 sm:p-6 text-center"
                         >
                             <img
-                                src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+                                src="/Quality-Delivery-Commitment-01.webp"
                                 alt="Quality Assurance"
                                 loading="lazy"
                                 className="rounded-xl w-full shadow-md mb-5"
@@ -204,7 +243,7 @@ export default function About() {
                             className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-xl p-6 text-center"
                         >
                             <img
-                                src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+                                src="/Quality-Delivery-Commitment-02.webp"
                                 alt="Delivery Punctuality"
                                 loading="lazy"
                                 className="rounded-xl w-full shadow-md mb-5"
@@ -232,7 +271,7 @@ export default function About() {
 
                         {/* Background Image */}
                         <img
-                            src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?cs=srgb&dl=pexels-pixabay-276724.jpg&fm=jpg"
+                            src="/hero-cta.webp"
                             alt="Living room CTA background"
                             loading="lazy"
                             className="w-full h-[350px] sm:h-[420px] md:h-[480px] object-cover"

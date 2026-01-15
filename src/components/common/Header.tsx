@@ -103,7 +103,7 @@ const Navbar = () => {
 
                         {isTransparent ? (
 
-                            <img src="/Nav-dark.png" loading="lazy" className="object-contain h-80 w-44" alt="nav-logo" />
+                            <img src="/logo-white.png" loading="lazy" className="object-contain h-80 w-44" alt="nav-logo" />
 
                         ) : (
 

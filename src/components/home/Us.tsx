@@ -98,7 +98,7 @@ export default function Us() {
                 >
                     <div className="rounded-2xl overflow-hidden shadow-lg">
                         <img
-                            src="https://homeone.in/wp-content/uploads/2025/01/home-interior-design-1.jpg"
+                            src="/Why-our-furniture-stands-out.webp"
                             loading="lazy"
                             alt="Cozy living room with plants and wooden furniture"
                             className="w-full h-[420px] md:h-[520px] object-cover block"

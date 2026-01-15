@@ -27,7 +27,7 @@ export const PRODUCTS: Product[] = [
         subtitle: "From Wienerberger India — future of construction",
         heroDescription:
             "Porotherm Plus, from Wienerberger India, represents the future of construction, setting a new benchmark for durability and strength. Designed for exceptional performance and unwavering reliability, it is the ultimate choice for robust construction.",
-        image: "https://bengaltile.com/storage/app/public/product_image/WallCladdingHD1.webp",
+        image: "/Porotherm-Plus.webp",
         advantages: [
             "Strength: 3X stronger than conventional bricks",
             "Features an extremely robust design",
@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
         subtitle: "Terracotta exposed masonry — sustainable & aesthetic",
         heroDescription:
             "The Porotherm FB Exteria is a special brick launched by Wienerberger specifically for terracotta exposed masonry. Exposed brickwork adds a unique character and is both sustainable and versatile.",
-        image: "https://bengaltile.com/storage/app/public/product_image/WallCladdingHD1.webp",
+        image: "/porotherm FB exteria-01.webp",
         advantages: [
             "Unmatched strength and durability, lasting for generations",
             "45% better thermal insulation, which helps save energy",
@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
         subtitle: "Advanced lightweight, eco-friendly walling solutions",
         heroDescription:
             "Porotherm HP Bricks are advanced, lightweight, and eco-friendly clay walling solutions designed for faster, stronger, and energy-efficient construction. Manufactured using natural materials, they offer superior thermal insulation and reduced structural load.",
-        image: "https://bengaltile.com/storage/app/public/product_image/WallCladdingHD1.webp",
+        image: "/Porotherm-HP.webp",
         advantages: [
             "Light weight – up to 60% less weight than conventional walling material",
             "Excellent thermal insulation",

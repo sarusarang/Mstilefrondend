@@ -9,12 +9,12 @@ export default function SellingProducts() {
 
 
     // Sample images for the cards
-    const images = [
-        "https://image.made-in-china.com/2f0j00RgleBnsqMicy/Import-60X60-Non-Slip-Tiles-Price-in-Philippines-From-China.webp",
-        "https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/amj-2025-1744185110-pMHWe/dining-room-1744827105-ZkIP5/new-project-16-1746176324-b8JKP.jpg",
-        "https://cdn.magicdecor.in/com/2024/08/27161123/Ancient-Mosaic-Ceramic-Tile-Pattern-Wallpaper-Mural-M-710x488.jpg",
-        "https://server.orientbell.com/media/black-tiles.jpg",
-        "https://www.hanseceramictile.com/Images/living-room-floor-tiles-banner-top.jpg",
+    const images : string[] = [
+        "/hero-image-gird-1.webp",
+        "/hero-image-gird-2.jpg",
+        "/hero-image-gird-3.jpg",
+        "/hero-image-gird-4.jpg",
+        "/hero-image-gird-5.jpg", 
     ];
 
 
@@ -68,7 +68,10 @@ export default function SellingProducts() {
             </div>
 
 
-            {/* CURVED BOTTOM CARD */}
+
+
+
+            {/* Most Selling Products */}
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -87,14 +90,14 @@ export default function SellingProducts() {
                     And Goods.
                 </p>
 
-                {/* 3-IMAGE GRID */}
+
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-2 sm:px-12 lg:px-20">
 
-                    {/* Image Card */}
+
                     {[
-                        "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-                        "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg",
-                        "https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg"
+                        "/most-selling-1.webp",
+                        "/most-selling-2.webp",
+                        "/most-selling-3.webp"
                     ].map((img, index) => (
                         <motion.div
                             key={index}
@@ -115,6 +118,7 @@ export default function SellingProducts() {
 
                 </div>
 
+
                 <Link to="/products" className="hover:cursor-pointer">
                     <button className="mt-8 font-serif px-8 py-3 border border-black rounded-full 
                            text-sm font-medium hover:bg-black hover:text-white transition 
@@ -122,6 +126,8 @@ export default function SellingProducts() {
                         More Details →
                     </button>
                 </Link>
+
+
             </motion.div>
 
 

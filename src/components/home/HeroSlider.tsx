@@ -10,28 +10,16 @@ import { Link } from "react-router-dom";
 
 
 // Slides Data
-const slides: { id: number; image: string; title: string; desc: string; sub: string }[] = [
+const slides: { id: number; image: string; mobileimage: string; title: string; desc: string; sub: string }[] = [
     {
         id: 1,
-        image: "https://www.kajariaceramics.com/storage/banner/kajaria-living-desktop-2.webp",
+        image: "/home-slider-1.webp",
+        mobileimage: "/home-slider-1-mobile.webp",
         title: "Shaping Dreams",
         desc: "Into Living Spaces",
         sub: "Set the tone of your space with tiles that go beyond function.",
     },
-    {
-        id: 2,
-        image: "https://azteca.es/wp-content/uploads/2023/07/a-lacio-120-1.jpeg",
-        title: "Shaping Dreams",
-        desc: "Into Living Spaces",
-        sub: "Set the tone of your space with tiles that go beyond function.",
-    },
-    {
-        id: 3,
-        image: "https://www.kajariaceramics.com/storage/banner/kajaria-outdoor-dektop1.webp",
-        title: "Shaping Dreams",
-        desc: "Into Living Spaces",
-        sub: "Set the tone of your space with tiles that go beyond function.",
-    },
+
 ];
 
 
@@ -72,6 +60,18 @@ export default function HeroSlider() {
                             <motion.img
                                 key={`${slide.id}-${activeIndex}`}
                                 src={slide.image}
+                                alt="Slide"
+                                initial={{ scale: 1.2 }}
+                                animate={{ scale: 1 }}
+                                transition={{ duration: 5, ease: "easeOut" }}
+                                className="w-full h-full object-cover"
+                            />
+
+
+                            {/* Mobile Image */}
+                            <motion.img
+                                key={`${slide.id}-${activeIndex}`}
+                                src={slide.mobileimage}
                                 alt="Slide"
                                 initial={{ scale: 1.2 }}
                                 animate={{ scale: 1 }}

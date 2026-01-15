@@ -19,7 +19,7 @@ export default function PorothermProductPage() {
             <HeroBanner
                 title="Products"
                 desc="Kerala's trusted distributor of Porotherm Smart Bricks — Building greener, stronger, and smarter future-ready walls."
-                image="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                image="/product-banner.jpeg"
             />
 
 

@@ -32,7 +32,7 @@ export default function About() {
 
 
 
-            <div className="px-2 sm:px-10 lg:px-20 pb-5">
+            <div className="px-4 sm:px-10 lg:px-20 pb-5">
 
 
                 {/* ---------------- INTRO ---------------- */}
